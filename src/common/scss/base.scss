@@ -1,0 +1,92 @@
+@import "variable.scss";
+
+body, html{
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: $color-background;
+  color: $color-text;
+}
+
+*::-webkit-scrollbar {display:none}
+
+input, button{
+  outline: none!important;
+}
+
+.border-radius-right:after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $color-background;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+  .border-radius-left:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $color-background;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5) {
+    .border-1px
+    &:after {
+      transform: translateY(0.7);
+      -webkit-transform: translateY(0.7);
+    }
+  }
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2) {
+  .border-1px 
+  &:after {
+    transform: translateY(0.5);
+    -webkit-transform: translateY(0.5);
+  }
+}
+
+// 用来覆盖mint-ui的一些样式
+input.mint-field-core {
+  text-align: right;
+}
+
+.mint-msgbox {
+  border-radius: 16px;
+}
+
+.mint-msgbox-header{
+  padding-bottom: 15px;
+}
+
+.mint-msgbox-btns {
+  height: 50px;
+  line-height: 50px;
+}
+.mint-msgbox-btns button {
+  font-size: $font-size-medium;
+}
+
+.mint-msgbox-confirm {
+  color: #0093ff;
+}
+
+// 调节nprogress的进度条
+.spinner {
+  display: none!important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #04be02, 0 0 5px #04be02;
+}
+#nprogress .bar {
+  background: #04be02;
+}
+

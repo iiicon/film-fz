@@ -1,0 +1,23 @@
+export const SET_CURRENT_CITY = 'SET_CURRENT_CITY'
+
+export const SET_CURRENT_SHOW = 'SET_CURRENT_SHOW'
+
+export const SET_CURRENT_ID = 'SET_CURRENT_ID'
+
+export const SET_TOTAL_PRICE = 'SET_TOTAL_PRICE'
+
+export const CLEAR_TOTAL_PRICE = 'CLEAR_TOTAL_PRICE'
+
+export const SET_TICKET_COUNT = 'SET_TICKET_COUNT'
+
+export const CLEAR_TICKET_COUNT = 'CLEAR_TICKET_COUNT'
+
+export const SET_EXPRESS_ADDRESS = 'SET_EXPRESS_ADDRESS'
+
+export const SET_UNIT_ID = 'SET_UNIT_ID'
+
+export const CLEAR_UNIT_ID = 'CLEAR_UNIT_ID'
+
+export const SET_ORDER_NO = 'SET_ORDER_NO'
+
+export const CLEAR_ORDER_NO = 'CLEAR_ORDER_NO'
